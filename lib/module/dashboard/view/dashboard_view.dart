@@ -16,7 +16,7 @@ class DashboardView extends StatefulWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Hello, Samuel",
+          "Hello, Tedyy",
           style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.bold,
