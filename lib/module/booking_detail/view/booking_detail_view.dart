@@ -337,7 +337,7 @@ class BookingDetailView extends StatefulWidget {
                       ),
                     ),
                     Positioned(
-                      bottom: 15,
+                      bottom: 10,
                       left: 0,
                       right: 0,
                       child: SizedBox(

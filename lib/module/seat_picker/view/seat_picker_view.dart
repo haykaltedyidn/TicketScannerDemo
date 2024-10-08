@@ -91,7 +91,8 @@ class SeatPickerView extends StatefulWidget {
                 height: 20.0,
               ),
               Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Column(
                     children: [
@@ -229,55 +230,55 @@ class SeatPickerView extends StatefulWidget {
                       ),
                     ],
                   ),
-                  const Spacer(),
-                  RotatedBox(
-                    quarterTurns: 1,
-                    child: SizedBox(
-                      height: 35,
-                      child: Stack(
-                        children: [
-                          Center(
-                            child: Container(
-                              height: 4,
-                              width: 600,
-                              decoration: const BoxDecoration(
-                                color: Color(0xffdedede),
-                              ),
-                            ),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.only(
-                              left: 90.0,
-                            ),
-                            child: Center(
-                              child: QCategoryPicker(
-                                items: const [
-                                  {
-                                    "label": "Executive",
-                                    "value": "1",
-                                  },
-                                  {
-                                    "label": "Business",
-                                    "value": "2",
-                                  },
-                                  {
-                                    "label": "Economy",
-                                    "value": "3",
-                                  },
-                                ],
-                                // validator: Validator.required,
-                                value: "1",
-                                onChanged: (index, label, value, item) {},
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 25.0,
-                  ),
+                  // const Spacer(),
+                  // RotatedBox(
+                  //   quarterTurns: 1,
+                  //   child: SizedBox(
+                  //     height: 10,
+                  //     child: Stack(
+                  //       children: [
+                  //         Center(
+                  //           child: Container(
+                  //             height: 4,
+                  //             width: 600,
+                  //             decoration: const BoxDecoration(
+                  //               color: Color(0xffdedede),
+                  //             ),
+                  //           ),
+                  //         ),
+                  //         Container(
+                  //           margin: const EdgeInsets.only(
+                  //             left: 90.0,
+                  //           ),
+                  //           child: Center(
+                  //             child: QCategoryPicker(
+                  //               items: const [
+                  //                 {
+                  //                   "label": "Executive",
+                  //                   "value": "1",
+                  //                 },
+                  //                 {
+                  //                   "label": "Business",
+                  //                   "value": "2",
+                  //                 },
+                  //                 {
+                  //                   "label": "Economy",
+                  //                   "value": "3",
+                  //                 },
+                  //               ],
+                  //               // validator: Validator.required,
+                  //               value: "1",
+                  //               onChanged: (index, label, value, item) {},
+                  //             ),
+                  //           ),
+                  //         ),
+                  //       ],
+                  //     ),
+                  //   ),
+                  // ),
+                  // const SizedBox(
+                  //   width: 25.0,
+                  // ),
                 ],
               ),
             ],
