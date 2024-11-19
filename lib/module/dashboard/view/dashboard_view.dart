@@ -94,31 +94,29 @@ class DashboardView extends StatefulWidget {
                         value: "Pati",
                         // validator: Validator.required,
                         items: const [
-                          {
-                            "label": "Pati",
-                            "value": "Pati",
-                          },
-                          {
-                            "label": "Kudus",
-                            "value": "Kudus",
-                          }
-                        ],
+                           {"label": "Pati", "value": "Pati"},
+                           {"label": "Kudus", "value": "Kudus"},
+                           {"label": "Jombang", "value": "Jombang"},
+                           {"label": "Surabaya", "value": "Surabaya"},
+                           {"label": "Solo", "value": "Solo"},
+                           {"label": "Jogja", "value": "Jogja"},
+                           {"label": "Berjo", "value": "Berjo"},
+                           ],
                         onChanged: (value, label) {},
                       ),
                       QDropdownField(
                         label: "To",
-                        value: "Kudus",
+                        value: "Berjo",
                         // validator: Validator.required,
                         items: const [
-                          {
-                            "label": "Pati",
-                            "value": "Pati",
-                          },
-                          {
-                            "label": "Kudus",
-                            "value": "Kudus",
-                          }
-                        ],
+                           {"label": "Pati", "value": "Pati"},
+                           {"label": "Kudus", "value": "Kudus"},
+                           {"label": "Jombang", "value": "Jombang"},
+                           {"label": "Surabaya", "value": "Surabaya"},
+                           {"label": "Solo", "value": "Solo"},
+                           {"label": "Jogja", "value": "Jogja"},
+                           {"label": "Berjo", "value": "Berjo"},
+                           ],
                         onChanged: (value, label) {},
                       ),
                       Row(

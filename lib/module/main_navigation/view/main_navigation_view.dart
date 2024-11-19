@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:train_ticket_buying_app/module/shoppingbag/view/shopping_bag_view.dart';
 import '../../dashboard/view/dashboard_view.dart';
+import '../../shoppingbag/view/shopping_bag_view.dart';
+import '../../ticket/view/ticket_view.dart';
+import '../../settings/view/settings_view.dart';
 import '../controller/main_navigation_controller.dart';
 
 class MainNavigationView extends StatefulWidget {
@@ -16,9 +20,9 @@ class MainNavigationView extends StatefulWidget {
           index: controller.selectedIndex,
           children: [
             const DashboardView(),
-            Container(),
-            Container(),
-            Container(),
+            ShoppingBagView(),
+            const TicketView(),
+            const SettingsView(),
           ],
         ),
         bottomNavigationBar: Padding(
@@ -34,32 +38,20 @@ class MainNavigationView extends StatefulWidget {
               elevation: 0.0,
               items: const [
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.home,
-                    size: 36.0,
-                  ),
+                  icon: Icon(Icons.home, size: 36.0),
                   label: "Dashboard",
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.shopping_bag,
-                    size: 36.0,
-                  ),
-                  label: "Order",
+                  icon: Icon(Icons.shopping_bag, size: 36.0),
+                  label: "Shopping Bag",
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.airplane_ticket,
-                    size: 36.0,
-                  ),
-                  label: "Favorite",
+                  icon: Icon(Icons.airplane_ticket, size: 36.0),
+                  label: "Ticket",
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.settings,
-                    size: 36.0,
-                  ),
-                  label: "User",
+                  icon: Icon(Icons.settings, size: 36.0),
+                  label: "Settings",
                 ),
               ],
             ),

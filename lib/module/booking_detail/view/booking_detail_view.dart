@@ -146,7 +146,7 @@ class BookingDetailView extends StatefulWidget {
                                       ),
                                     ),
                                     Text(
-                                      "Pati",
+                                      "Jogja",
                                       style: TextStyle(
                                         fontSize: 16.0,
                                         color: Color(0xff393e48),
@@ -168,7 +168,7 @@ class BookingDetailView extends StatefulWidget {
                                       ),
                                     ),
                                     Text(
-                                      "Kudus",
+                                      "Berjo",
                                       style: TextStyle(
                                         fontSize: 16.0,
                                         color: Color(0xff393e48),
